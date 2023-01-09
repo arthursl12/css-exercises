@@ -51,12 +51,14 @@ body {
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin: 2px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  font-weight: 600;
 }
 
 button.cancel {
@@ -64,3 +66,41 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* Solution */
+
+.modal{
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.title-and-close{
+  padding: 2px 10px 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon {
+  /* this keeps the icon from getting smashed by the text */
+  flex-shrink: 0;
+}
+
+.header{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.text{
+  padding: 10px;
+}
+
+.buttons{
+  display:flex;
+  padding: 10px;
+}
+
+
+
